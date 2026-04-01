@@ -1,40 +1,63 @@
-# Exercício referente ao módulo 32 do curso de ciência de dados da EBAC
-**Neste módulo é feita a prática do algoritimo de aprendizado supervisionado random forest(floresta aleatória) utilizando uma base de dados de vinhos**
+# Classificação de Qualidade de Vinhos com Random Forest
 
-## As Colunas da base são as seguintes:
-* fixed acidity -  mede a acides fixa do vinho
-* volatile acidity -  mede a acides volatil do vinho
-* citric acid -  mede a quantidade de acido citrico presente no vinho
-* residual sugar -  mede a quantidade de açucar residual presente no vinho
-* chlorides -  mede os cloretos do vinho
-* free sulfur dioxide - A quantidade de dioxido de enxofre livre no vinho
-* total sulfur dioxide - Quantidade de dioxido de enxofre total no vinho
-* density - A densidade total do vinho
-* pH - O ph do vinho se é mais acido ou mais base
-* sulphates - O nivel de sulfatos no vinho
-* alchohol - O teor alcoolico do vinho
-* qualitiy - A qualidade do vinho
+Uma análise prática de aprendizado supervisionado utilizando o algoritmo Random Forest (Floresta Aleatória) em um conjunto de dados de propriedades físico-químicas de vinhos.
 
-## O que foi feito:
-* Realização da primeira etapa do pré-processamento de dados
-* Realização da segunda e terceira etapas do pré-processamento de dados
-  * Utilização da função describe
-  * Gráficos para identificar os outliers
-  * Substituição dos outliers utilizando IQR
-  * Verificação do balanceamento da variável target
-  * Criação de uma tabela para indicar as variável com maior correlação
-* Criado um novo datagrame somente com as variáveis melhor correlacionadas
-* Separação dos dados em X(features) e Y(target)
-* Separação em base de treino e teste
-* Iniciado o treinamento do modelo de Random Forest
-* Aplicação do modelo a base de testes
-* Avaliação de métricas e interpretação dos valores
-* Hyperparametrização e análise das novas métricas
+## 📋 Visão Geral do Projeto
 
-## Como Rodar o projeto
-* Clone o repositório para o sua máquina
-* Abra o projeto em um ambiente python
-* Execute o código
+Este projeto implementa um modelo de classificação baseado em Random Forest para prever a qualidade de vinhos a partir de suas características físico-químicas. O projeto faz parte do módulo 32 do curso de Ciência de Dados da EBAC.
+
+## 📊 Dicionário de Dados
+
+| Feature | Descrição |
+|---------|-----------|
+| **fixed acidity** | Acidez fixa do vinho (g/dm³) |
+| **volatile acidity** | Acidez volátil do vinho (g/dm³) |
+| **citric acid** | Quantidade de ácido cítrico presente (g/dm³) |
+| **residual sugar** | Açúcar residual após fermentação (g/dm³) |
+| **chlorides** | Teor de cloretos (g/dm³) |
+| **free sulfur dioxide** | Dióxido de enxofre livre (mg/dm³) |
+| **total sulfur dioxide** | Dióxido de enxofre total (mg/dm³) |
+| **density** | Densidade do vinho (g/cm³) |
+| **pH** | Potencial hidrogeniônico (acidez/basicidade) |
+| **sulphates** | Nível de sulfatos (g/dm³) |
+| **alcohol** | Teor alcoólico (%) |
+| **quality** | Qualidade do vinho (variável-alvo) |
+
+## 🔧 Metodologia
+
+### Pré-processamento de Dados
+- ✓ Exploração e limpeza inicial dos dados
+- ✓ Análise descritiva com função `describe()`
+- ✓ Visualização e identificação de outliers
+- ✓ Remoção de outliers utilizando método IQR
+- ✓ Análise de balanceamento da variável-alvo
+- ✓ Matriz de correlação de variáveis
+
+### Engenharia de Features
+- ✓ Seleção de variáveis com maior correlação
+- ✓ Criação de novo dataset com features otimizadas
+- ✓ Separação de features (X) e target (Y)
+
+### Modelagem
+- ✓ Divisão dos dados em treino/teste
+- ✓ Treinamento do modelo Random Forest
+- ✓ Avaliação de métricas de desempenho
+- ✓ Hiperparametrização e otimização do modelo
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+- Python 3.7+
+- Jupyter Notebook
+
+### Instalação
+
+# Clone o repositório
+* git clone https://github.com/GrizzoHenrique/RandomForest.git
+* cd RandomForest
+
+# Instale as dependências (caso necessário)
+* pip install -r requirements.txt
 
 ## Tecnologias utilizadas
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
