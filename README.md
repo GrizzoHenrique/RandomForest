@@ -2,13 +2,13 @@
 
 Uma análise prática de aprendizado supervisionado utilizando o algoritmo Random Forest (Floresta Aleatória) em um conjunto de dados de propriedades físico-químicas de vinhos.
 
-## 📋 Visão Geral do Projeto
+## Visão Geral do Projeto
 
 Este projeto implementa um modelo de classificação baseado em Random Forest para prever a qualidade de vinhos a partir de suas características físico-químicas. O projeto faz parte do módulo 32 do curso de Ciência de Dados da EBAC.
 
-## 📊 Dicionário de Dados
+## Dicionário de Dados
 
-| Feature | Descrição |
+| Campo | Descrição |
 |---------|-----------|
 | **fixed acidity** | Acidez fixa do vinho (g/dm³) |
 | **volatile acidity** | Acidez volátil do vinho (g/dm³) |
@@ -23,7 +23,7 @@ Este projeto implementa um modelo de classificação baseado em Random Forest pa
 | **alcohol** | Teor alcoólico (%) |
 | **quality** | Qualidade do vinho (variável-alvo) |
 
-## 🔧 Metodologia
+## Metodologia
 
 ### Pré-processamento de Dados
 - ✓ Exploração e limpeza inicial dos dados
@@ -44,7 +44,7 @@ Este projeto implementa um modelo de classificação baseado em Random Forest pa
 - ✓ Avaliação de métricas de desempenho
 - ✓ Hiperparametrização e otimização do modelo
 
-## 🚀 Como Executar
+##  Como Executar
 
 ### Pré-requisitos
 - Python 3.7+
